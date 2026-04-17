@@ -35,6 +35,26 @@ class BinaryTree
         preOrder(root.left);
         preOrder(root.right);
     }
+    void Inorder(Node root)
+    {
+        if(root==null)
+        {
+            return;
+        }
+        Inorder(root.left);
+        System.out.print(root.data+" ");
+        Inorder(root.right);
+    }
+    void postorder(Node root)
+    {
+        if(root==null)
+        {
+            return;
+        }
+        postorder(root.left);
+        postorder(root.right);
+        System.out.print(root.data+" ");
+    }
 }
 public class Tree
 {
